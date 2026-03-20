@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قوانين الشرطة - كراون سيتي</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #0a0a0c;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            color: #4a9eff;
+            font-size: 14px;
+            margin-top: 0;
+        }
+
+        .main-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px rgba(0, 86, 179, 0.5);
+        }
+
+        .accordion-container {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .accordion-item {
+            background-color: #141417;
+            border: 1px solid #1f1f23;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .accordion-header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .accordion-header:hover {
+            background-color: #1c1c21;
+        }
+
+        .accordion-header h3 {
+            margin: 0;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon-left {
+            color: #4a9eff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, padding 0.3s ease;
+            background-color: #0f0f12;
+            padding: 0 20px;
+        }
+
+        .accordion-content ul {
+            padding: 20px;
+            margin: 0;
+            list-style: none;
+        }
+
+        .accordion-content li {
+            margin-bottom: 12px;
+            padding-right: 15px;
+            border-right: 2px solid #0056b3;
+            font-size: 15px;
+            color: #ccc;
+        }
+
+        /* الجزء النشط */
+        .accordion-item.active {
+            border-color: #0056b3;
+            box-shadow: 0 0 15px rgba(0, 86, 179, 0.2);
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 1000px; /* القيمة كافية للنصوص */
+            padding-bottom: 10px;
+        }
+
+        .highlight-blue {
+            color: #4a9eff;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background: #141417;
+        }
+        td, th {
+            border: 1px solid #2d2d35;
+            padding: 10px;
+            text-align: center;
+        }
+        th { background: #004494; }
+    </style>
+</head>
+<body>
+
+
+    <div class="header">
+        <h1>قوانين كراون سيتي</h1>
+        <p>الرئيسية > <span style="color:white">القوانين</span></p>
+    </div>
+
+    <div class="main-title">الميثاق العسكري للشرطة</div>
+
+    <div class="accordion-container">
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <span class="icon-left">+</span>
+                <h3>القوانين </h3>
+            </div>
+            <div class="accordion-content">
+                <ul>
+                    <li>عدم التسلط على المواطنين والرتب الأقل منك والاحترام المتبادل واجب.</li>
+                    <li>الجدية في العمل وتقمص شخصية العسكري لأبعد حد (رول بلاي واقعي).</li>
+                    <li>يمنع بيع أو إعطاء معدات الشرطة للمواطنين <span class="highlight-blue">(باند نهائي)</span>.</li>
+                    <li>ممنوع عصيان أوامر الرتب العليا بتاتاً.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <span class="icon-left">+</span>
+                <h3>🚔 المركبات والمطاردات</h3>
+            </div>
+            <div class="accordion-content">
+                <ul>
+                    <li>الالتزام بمركبات رتبتك فقط ومخالفة ذلك تعرضك للمحاسبة.</li>
+                    <li>يمنع استخدام سيارات المواطنين؛ تواصل مع زملائك عبر الراديو في حال احتجت لنقل.</li>
+                    <li>في المطاردة: يمنع الصدم المتعمد، ويجب الحفاظ على مسافة آمنة.</li>
+                    <li>يمنع إطلاق النار في المطاردة إلا بعد مرور <span class="highlight-blue">10 دقائق</span> أو إذا بدأ الهارب بالإطلاق.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <span class="icon-left">+</span>
+                <h3>🔫 الأسلحة واستخدام القوة</h3>
+            </div>
+            <div class="accordion-content">
+                <ul>
+                    <li>عدم إظهار السلاح أو التيزر إلا للضرورة القصوى.</li>
+                    <li>يمنع استخدام التيزر بالقرب من المسطحات المائية (البحر، البرك).</li>
+                    <li>السلاح الأبيض لا يسحب إلا في حال محاولة القتل به.</li>
+                    <li>يسمح بالإطلاق فوراً في حال (دهس شرطي، تهديد بسلاح أبيض، أو مبادرة المجرم بالإطلاق).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <span class="icon-left">+</span>
+                <h3>💎 حدود الوحدات في السرقات</h3>
+            </div>
+            <div class="accordion-content">
+                <table>
+                    <tr><th>نوع البلاغ</th><th>الحد الأقصى للوحدات</th></tr>
+                    <tr><td>سرقة بقالة / بيت</td><td>5 وحدات</td></tr>
+                    <tr><td>صراف صغير</td><td>3 وحدات</td></tr>
+                    <tr><td>المجوهرات</td><td>7 وحدات</td></tr>
+                    <tr><td>البنك المركزي</td><td>13 وحدة</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <span class="icon-left">+</span>
+                <h3>🛑 مفشلات الهروب الآمن</h3>
+            </div>
+            <div class="accordion-content">
+                <ul>
+                    <li>تغيير المركبة أو الدخول لورشة التصليح.</li>
+                    <li>التوجه للبحر بشكل واضح أو القفزات الانتحارية.</li>
+                    <li>تهديد حياة المواطنين بعكس السير أو الصدم المتعمد.</li>
+                    <li> الصعود على الارصفة الحد الاقصى 3 ارصفه</li>
+                     <li> الدخول الى اماكن ضيقة او انفاق </li>
+                     <li> الندخل الخارجي  </li>
+                     <li> العكسات الاحد الاقصى 3 عكسات </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // كود بسيط لتشغيل القوائم
+        document.querySelectorAll('.accordion-header').forEach(button => {
+            button.addEventListener('click', () => {
+                const accordionItem = button.parentElement;
+                
+                // إغلاق أي قائمة أخرى مفتوحة (اختياري)
+                // document.querySelectorAll('.accordion-item').forEach(item => {
+                //    if(item !== accordionItem) item.classList.remove('active');
+                // });
+
+                accordionItem.classList.toggle('active');
+                
+                // تغيير علامة + إلى -
+                const icon = button.querySelector('.icon-left');
+                if (accordionItem.classList.contains('active')) {
+                    icon.textContent = '-';
+                } else {
+                    icon.textContent = '+';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
